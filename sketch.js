@@ -11,6 +11,9 @@ function register(){
 }
 
 function setup(){
+  if(getItem("owner")){
+    console.log("welcome back")
+  }
   if(getItem("wishlist")){
     btn.classList.add('clicked');
     btn.disabled = true;
